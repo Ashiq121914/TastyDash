@@ -1,0 +1,14 @@
+/* common css */
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  font-size: 62.5%;
+}
+a{
+  text-decoration:none;
+  color: inherit;
+}
