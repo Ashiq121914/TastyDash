@@ -60,3 +60,15 @@ cursor: pointer;
     font-size: 1rem;
     text-align: center;
 }
+
+@media (max-width:750px){
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    .footer-copy-right{
+        text-align: center;
+    }
+    
+}

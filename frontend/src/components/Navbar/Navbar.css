@@ -61,3 +61,50 @@
     top: -.8rem;
     right: -.8rem;
 }
+
+@media (max-width:1050px){
+    .navbar .logo{
+        width:  14rem;
+    }
+    .navbar-menu{
+        gap: 2rem;
+        font-size: 1.7rem;
+    }
+    .navbar-right{
+        gap: 3rem;
+    }
+    .navbar-right img{
+        width: 2.2rem;
+    }
+    .navbar-right button{
+        padding: .8rem 2.5rem;
+    }
+}
+
+@media (max-width:900px){
+    .navbar .logo{
+        width:  12rem;
+    }
+    .navbar-menu{
+        gap: 1.5rem;
+        font-size: 1.6rem;
+    }
+    .navbar-right{
+        gap: 2rem;
+    }
+    .navbar-right img{
+        width: 2rem;
+    }
+    .navbar-right button{
+        padding: .7rem 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:750px){
+    
+    .navbar-menu{
+        display: none;
+    }
+    
+}
