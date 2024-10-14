@@ -1,0 +1,54 @@
+.my-orders {
+  margin: 5rem 0;
+}
+
+.my-orders .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.my-orders-order {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  color: #454545;
+  border: 1px solid tomato;
+}
+
+.my-orders-order img {
+  width: 5rem;
+}
+
+.my-orders-order p span {
+  color: tomato;
+}
+
+.my-orders-order p b {
+  font-weight: 500;
+  color: #454545;
+}
+
+.my-orders-order button {
+  border: none;
+  padding: 12px 0;
+  border-radius: 4px;
+  background-color: #ffe1e1;
+  cursor: pointer;
+  color: #454545;
+}
+
+@media (max-width: 900px) {
+  .my-orders-order {
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 5px;
+    font-size: 12px;
+  }
+  .my-orders-order button {
+    font-size: 12px;
+  }
+}
