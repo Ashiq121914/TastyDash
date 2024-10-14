@@ -50,6 +50,10 @@
 .navbar-search-icon {
   position: relative;
 }
+.cart-icon {
+  font-size: 2.7rem;
+  color: #49557e;
+}
 .navbar-search-icon .dot {
   position: absolute;
   min-width: 1rem;
@@ -101,6 +105,11 @@
 
 .navbar-profile {
   position: relative;
+}
+.navbar-profile-icon {
+  font-size: 2.7rem;
+  color: #49557e;
+  cursor: pointer;
 }
 .nav-profile-dropdown {
   position: absolute;

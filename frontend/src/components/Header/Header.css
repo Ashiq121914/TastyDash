@@ -19,15 +19,28 @@
   left: 6vw;
   animation: fadeIn 3s;
 }
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+  z-index: 1;
+  border-radius: 10px; /* Match the same border-radius */
+}
 
 .header-contents h2 {
   font-weight: 500;
   color: white;
   font-size: max(3.5vw, 2.2rem);
+  z-index: 2;
 }
 .header-contents p {
   color: white;
   font-size: 1vw;
+  z-index: 2;
 }
 .header-contents button {
   border: none;
@@ -37,6 +50,7 @@
   background-color: white;
   font-size: max(1vw, 1.3rem);
   border-radius: 5rem;
+  z-index: 2;
 }
 
 @media (max-width: 1050px) {
