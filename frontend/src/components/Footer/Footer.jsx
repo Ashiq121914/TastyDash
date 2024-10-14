@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
-          <img src={assets.logo} alt="" />
+          <img className="footer-logo" src={assets.logo} alt="" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
             error totam debitis dolorem ullam magnam, magni commodi vero illum
@@ -33,13 +33,16 @@ const Footer = () => {
           <h2>GET IN TOUCH</h2>
           <ul>
             <li>+880170000000</li>
-            <li>contact@tomato.com</li>
+            <li>contact@tastydash.com</li>
           </ul>
         </div>
       </div>
       <hr />
       <div className="footer-copy-right">
-        Copyright 2024 &copy; Tomato.com - All Right Reserved.
+        <p>
+          &copy; <script>document.write(new Date().getFullYear());</script>{" "}
+          Copyright 2024 &copy; tastydash.com - All Right Reserved.
+        </p>
       </div>
     </div>
   );

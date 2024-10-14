@@ -1,74 +1,80 @@
-.footer{
-    color: #d9d9d9;
-    background-color: #323232;
+.footer {
+  color: #d9d9d9;
+  background-color: #323232;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 8vw;
+  padding-top: 8rem;
+  margin-top: 10rem;
+}
+.footer-logo {
+  width: 20rem;
+}
+
+.footer-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 8rem;
+}
+
+.footer-content-left,
+.footer-content-right,
+.footer-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.footer-content-left li,
+.footer-content-right li,
+.footer-content-center li {
+  list-style: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+.footer-content-left p,
+.footer-content-right p,
+.footer-content-center p {
+  font-size: 1.4rem;
+}
+
+.footer-content-right h2,
+.footer-content-center h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+.footer-social-icons img {
+  width: 4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.footer hr {
+  width: 100%;
+  height: 2px;
+  margin: 2rem 0;
+  background-color: gray;
+  border: none;
+}
+.footer-copy-right {
+  font-size: 1rem;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .footer-content {
     display: flex;
     flex-direction: column;
-
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem 8vw;
-    padding-top: 8rem ;
-    margin-top: 10rem;
-}
-
-
-.footer-content{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 8rem;
-}
-
-.footer-content-left , .footer-content-right, .footer-content-center{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 2rem;
-}
-
-.footer-content-left li, .footer-content-right li, .footer-content-center li{
-    list-style: none;
-    margin-bottom: 1rem;
-    cursor: pointer;
-    font-size: 1.4rem;
-
-}
-.footer-content-left p, .footer-content-right p, .footer-content-center p{
-    font-size: 1.4rem;
-
-}
-
-.footer-content-right h2, .footer-content-center h2{
-    color: white;
-    font-size: 2rem;
-}
-
-.footer-social-icons img{
-width: 4rem;
-margin-right: 1rem;
-cursor: pointer;
-}
-
-.footer hr{
-    width: 100%;
-    height: 2px;
-    margin: 2rem 0;
-    background-color: gray;
-    border: none;
-}
-.footer-copy-right{
-    font-size: 1rem;
+    gap: 3.5rem;
+  }
+  .footer-copy-right {
     text-align: center;
-}
-
-@media (max-width:750px){
-    .footer-content{
-        display: flex;
-        flex-direction: column;
-        gap: 3.5rem;
-    }
-    .footer-copy-right{
-        text-align: center;
-    }
-    
+  }
 }
