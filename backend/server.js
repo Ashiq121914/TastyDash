@@ -10,11 +10,17 @@ import orderRouter from "./routes/orderRoute.js";
 
 // app config
 const app = express();
-// const port = 4000;
+const port = 4000;
 
 // middleware
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://tasty-dash.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 
 // database connection
 connectDB();
@@ -30,6 +36,6 @@ app.get("/", (req, res) => {
   res.send("api working");
 });
 
-app.listen(() => {
+app.listen(port, () => {
   console.log(`server started on http://localhost:${port}`);
 });
