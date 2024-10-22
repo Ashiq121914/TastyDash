@@ -10,6 +10,7 @@
     { "src": "/api/food", "dest": "/index.js" },
     { "src": "/api/user", "dest": "/index.js" },
     { "src": "/api/cart", "dest": "/index.js" },
-    { "src": "/api/order", "dest": "/index.js" }
+    { "src": "/api/order", "dest": "/index.js" },
+    { "src": "/", "dest": "/index.js" }
   ]
 }
