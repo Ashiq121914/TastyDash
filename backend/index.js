@@ -10,6 +10,7 @@ import "dotenv/config";
 // app config
 const app = express();
 const port = 4100;
+const HOST = "0.0.0.0";
 
 // middleware
 app.use(express.json());
@@ -35,7 +36,7 @@ app.use("/api/order", orderRouter);
 app.get("/", (req, res) => {
   res.send("API working");
 });
-app.listen(port, () => {
+app.listen(port, HOST, () => {
   console.log(`server started on http://localhost:${port}`);
 });
 
