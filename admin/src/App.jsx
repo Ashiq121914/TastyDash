@@ -9,7 +9,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
-  const url = "https://tasty-dash-backend.vercel.app";
+  const url = "http://103.174.51.80:4100";
   return (
     <div>
       <ToastContainer />
