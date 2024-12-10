@@ -6,8 +6,8 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
 
-  const url = "http://103.174.51.80:4100";
-  // const url = "http://103.174.51.80:4100";
+  const url = "https://tasty-dash-backend.vercel.app";
+  // const url = "https://tasty-dash-backend.vercel.app";
   // const url = "https://localhost:4000";
 
   const [token, setToken] = useState("");

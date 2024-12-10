@@ -14,4 +14,4 @@ export const assets = {
   parcel_icon,
 };
 
-export const url = "http://103.174.51.80:4100";
+export const url = "https://tasty-dash-backend.vercel.app";
