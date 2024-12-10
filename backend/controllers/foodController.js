@@ -1,19 +1,23 @@
+import uploadToCloudinary from "../config/coudinaryUpload.js";
 import foodModel from "../models/foodModel.js";
 import fs from "fs";
 
 // add food item
 const addFood = async (req, res) => {
-  let image_filename = `${req.file.filename}`;
-
-  const food = new foodModel({
-    name: req.body.name,
-    description: req.body.description,
-    price: req.body.price,
-    category: req.body.category,
-    image: image_filename,
-  });
-
   try {
+    if (!req.file) {
+      throw error("file is not uploaded");
+    }
+    let image_filename = uploadToCloudinary(req.file, Math.random() * 10000);
+
+    const food = new foodModel({
+      name: req.body.name,
+      description: req.body.description,
+      price: req.body.price,
+      category: req.body.category,
+      image: image_filename,
+    });
+
     await food.save();
     res.json({ success: true, message: "Food added" });
   } catch (error) {

@@ -36,8 +36,9 @@ app.use("/api/order", orderRouter);
 app.get("/", (req, res) => {
   res.send("API working");
 });
-app.listen(port, HOST, () => {
-  console.log(`server started on http://localhost:${port}`);
-});
+// app.listen(port, HOST, () => {
+//   console.log(`server started on http://localhost:${port}`);
+// });
+// SSL Certificate paths
 
 export default app;
