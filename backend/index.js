@@ -14,16 +14,16 @@ const HOST = "0.0.0.0";
 
 // middleware
 app.use(express.json());
-app.use(
-  cors({
-    origin: [
-      "https://tasty-dash.vercel.app",
-      "https://tasty-dash-admin.vercel.app",
-    ],
-    methods: ["POST", "GET"],
-    credentials: true,
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       "https://tasty-dash.vercel.app",
+//       "https://tasty-dash-admin.vercel.app",
+//     ],
+//     methods: ["POST", "GET"],
+//     credentials: true,
+//   })
+// );
 app.use(cors());
 
 // database connection
