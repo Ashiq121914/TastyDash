@@ -30,7 +30,7 @@ connectDB();
 
 // api endpoint
 app.use("/api/food", foodRouter);
-app.use("/images", express.static("uploads")); // we can access the image at images/image_name now
+// app.use("/images", express.static("uploads"));
 app.use("/api/user", userRouter);
 app.use("/api/cart", cartRouter);
 app.use("/api/order", orderRouter);
