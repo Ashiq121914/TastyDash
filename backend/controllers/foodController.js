@@ -4,11 +4,16 @@ import fs from "fs";
 
 // add food item
 const addFood = async (req, res) => {
+  console.log(req.body);
+  console.log(req.file);
   try {
     if (!req.file) {
       throw error("file is not uploaded");
     }
-    let image_filename = uploadToCloudinary(req.file, Math.random() * 10000);
+    let image_filename = await uploadToCloudinary(
+      req.file,
+      Math.random() * 10000
+    );
 
     const food = new foodModel({
       name: req.body.name,
