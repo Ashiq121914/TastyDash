@@ -1,14 +1,3 @@
-/*
- * Title: Cloudinary Config
- * Description: Configure Cloudinary in AgencyBlog Project
- * Author: Gazi Ashiq
- * Date: 8/20/2024
- *
- */
-
-/**
- *  node module
- **/
 import cloudinary from "cloudinary";
 
 /**
