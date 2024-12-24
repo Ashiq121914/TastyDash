@@ -19,8 +19,10 @@ app.use(
     origin: [
       "https://tasty-dash.vercel.app",
       "https://tasty-dash-admin.vercel.app",
+      "http://localhost:5173",
     ],
     methods: ["POST", "GET"],
+    credentials: true,
   })
 );
 // app.use(cors());
